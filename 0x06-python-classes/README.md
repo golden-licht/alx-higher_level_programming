@@ -11,7 +11,8 @@
 * `AttributeError` and the `getattr` function
 * binding attributes to functions to use the attributes as static variables
 * first class functions: can return functions 
-* abstraction, information hiding and encapsulation
-* public, protected and private attributes
+* abstraction, information hiding, and encapsulation
+* public, protected, and private attributes
+* properties Vs setters and getters
 
 
