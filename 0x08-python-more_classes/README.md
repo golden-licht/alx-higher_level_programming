@@ -1,4 +1,4 @@
-0x08-python-more_classes
+# 0x08-python-more_classes
 
 * `myobject.method(arg1, arg2)` == `MyClass.method(myobject, arg1, arg2)`
 * `@classmethod` and `@staticmethod` decorators 
