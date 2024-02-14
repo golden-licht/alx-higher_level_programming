@@ -1,0 +1,15 @@
+Test file for the function `say_my_name` in the module `3-say_my_name`
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("king", "apple")
+My name is king apple
+>>> say_my_name("king")
+My name is king 
+>>> say_my_name(4, "apple")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+>>> say_my_name("king", 4)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
