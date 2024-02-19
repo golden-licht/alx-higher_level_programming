@@ -18,6 +18,7 @@ def text_indentation(text):
     characters = {'.', '?', ':'}
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+    prev = False
     for x in text:
         if x == ' ' and prev is True:
             continue
