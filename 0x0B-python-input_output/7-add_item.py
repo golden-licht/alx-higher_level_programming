@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+
+"""This module defines the function add_item"""
 import sys
 
 load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-
-"""This module defines the function add_item"""
 
 
 def add_item():
