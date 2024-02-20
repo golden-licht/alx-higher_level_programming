@@ -1,0 +1,20 @@
+# Test file for the class BaseGeometry in the module `base_geometry.py`
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> bg.integer_validator("test", "string")
+Traceback (most recent call last):
+    ...
+TypeError: test must be an integer
+
+>>> bg.integer_validator("test", -10)
+Traceback (most recent call last):
+    ...
+ValueError: test must be greater than 0
+
+>>> bg.integer_validator("test", 10)  # No exception should be raised
