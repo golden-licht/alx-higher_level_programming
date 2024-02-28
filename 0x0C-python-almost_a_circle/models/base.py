@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import json
 
 """This module contains definition for the class, `Base`"""
+import json
 
 
 class Base:
