@@ -21,7 +21,7 @@ if __name__ == "__main__":
         password=password,
         database=database)
     db.query("""SELECT * FROM states
-                    WHERE name LIKE 'N%'
+                    WHERE BINARY name LIKE 'N%'
                     ORDER BY id ASC""")
     result = db.store_result()
     # fetch all the rows
