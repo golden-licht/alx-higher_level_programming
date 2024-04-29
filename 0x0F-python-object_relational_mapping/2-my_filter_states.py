@@ -26,7 +26,7 @@ if __name__ == "__main__":
         password=password,
         database=database)
     db.query("""SELECT * FROM states
-                  WHERE name = '{}'
+                  WHERE BINARY name = '{}'
                   ORDER BY id ASC""".format(state_name))
     result = db.store_result()
     # fetch all the rows
