@@ -23,7 +23,7 @@ if __name__ == "__main__":
     state_found = False
     for instance in session.query(State).filter(State.name == name):
         state_found = True
-        print("{}: {}".format(instance.id, instance.name))
+        print(instance.id)
     if (not state_found):
         print("Not found")
 
