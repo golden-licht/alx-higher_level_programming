@@ -7,6 +7,7 @@ from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
+
 class State(Base):
     """
     A class to represent a state entity in the database.
@@ -17,5 +18,6 @@ class State(Base):
     """
     __tablename__ = 'states'
 
-    id = Column(Integer, autoincrement="auto", unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, autoincrement="auto", unique=True,
+                nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
