@@ -6,5 +6,6 @@ const request = require('request');
 const url = argv[2];
 
 request(url, (err, response, body) => {
-  console.log('code: ', response.statusCode);
+  if (err) console.error(err);
+  console.log('code:', response.statusCode);
 });
