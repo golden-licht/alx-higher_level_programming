@@ -2,6 +2,13 @@ $(document).ready(function () {
   $('INPUT#btn_translate').click(function () {
     handleTranslation();
   });
+
+  $('INPUT#language_code').keydown(function (event) {
+    // checking if the key pressed is 'enter' key
+    if (event.keyCode === 13) {
+      handleTranslation();
+    }
+  });
 });
 
 function handleTranslation () {
